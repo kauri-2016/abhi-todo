@@ -1,4 +1,5 @@
-[{
+{
+  "tasks":[{
     "todo": "Do washing"
   }, {
     "todo": "Get a haircut"
@@ -11,5 +12,6 @@
   }, {
     "todo": "Email Kylie"
   }, {
-    "todo": "got to gym"
+    "todo": "go to gym"
   }]
+}
