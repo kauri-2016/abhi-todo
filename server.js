@@ -3,6 +3,7 @@ var hbs = require('express-handlebars')
 var path = require('path')
 
 var getJsObj = require('./getData')
+var routes = require('./routes')
 
 var app = express()
 
@@ -16,14 +17,7 @@ app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, 'views'))
 
 var taskFile = path.join(__dirname, 'data.json')
-app.get('/', function (req, res) {
-  getJsObj(taskFile, function (err, data) {
-    // console.log(data);
-    if (!err) {
-      res.render('home', data)
-    }
-  })
-})
+app.get('/', routes.home)
 
 app.listen(PORT, function () {
   console.log('Listening on port :', PORT);
