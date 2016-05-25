@@ -1,6 +1,29 @@
-<h1> Lit of tasks</h1>
-<ul>
-  {{#each tasks}}
-    <li>{{todo}}</li>
-  {{/each}}
-</ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" media="screen" title="no title" charset="utf-8">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="one-third column">&nbsp;</div>
+        <div class="one-third column">
+          <h2> List of tasks</h2>
+          <table class="u-full-width">
+            <tbody>
+              {{#each tasks}}
+              <tr>
+                <td>{{todo}} <a class="button" style ="float: right;" href="#">X</a></td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+        <div class="one-third column">&nbsp;</div>
+      </div>
+    </div>
+
+  </body>
+</html>
