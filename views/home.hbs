@@ -8,11 +8,21 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="one-third column">&nbsp;</div>
-        <div class="one-third column">
-          <h2> List of tasks</h2>
+
+        <div class="two columns">&nbsp;</div>
+
+        <div class="eight columns">
+          <h2 style="text-align: center;">List of tasks</h2>
           <table class="u-full-width">
             <tbody>
+              <tr>
+                <td>
+                  <div class="row">
+                    <input class="eight columns"  placeholder="Add a new task..." type="text" name="addTask" value="">
+                    <input class="four columns" type="submit" value="Add Task" style ="float: right;">
+                  </div>
+                </td>
+              </tr>
               {{#each tasks}}
               <tr>
                 <td>{{todo}} <a class="button" style ="float: right;" href="#">X</a></td>
@@ -21,7 +31,9 @@
             </tbody>
           </table>
         </div>
-        <div class="one-third column">&nbsp;</div>
+
+        <div class="two columns">&nbsp;</div>
+
       </div>
     </div>
 
